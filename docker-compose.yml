@@ -2,6 +2,15 @@
 version: "3.7"
 
 services:
+  elm:
+    command: elm-app start
+    container_name: elm
+    image: ${APP}-elm:${APP_VERSION}
+    ports:
+      - 8882:3000
+    volumes:
+      - ./services/${APP}-elm:/srv/${APP}-elm
+
   ember:
     command: ember serve
     container_name: ember

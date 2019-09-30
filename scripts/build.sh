@@ -4,7 +4,7 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-declare -a frontends=("ember" "react" "vue")
+declare -a frontends=("elm" "ember" "react" "vue")
 
 # TODO: provide interface for building only specified frontends
 function build () {
