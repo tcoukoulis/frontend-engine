@@ -2,6 +2,15 @@
 version: "3.7"
 
 services:
+  ember:
+    command: ember serve
+    container_name: ember
+    image: ${APP}-ember:${APP_VERSION}
+    ports:
+      - 8881:4200
+    volumes:
+      - ./services/${APP}-ember:/srv/${APP}-ember
+
   react:
     command: npm start
     container_name: react
