@@ -1,0 +1,12 @@
+---
+version: "3.7"
+
+services:
+  react:
+    command: npm start
+    container_name: react
+    image: ${APP}-react:${APP_VERSION}
+    ports:
+      - 8888:3000
+    volumes:
+      - ./services/${APP}-react:/srv/${APP}-react
