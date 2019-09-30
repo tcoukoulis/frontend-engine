@@ -10,3 +10,12 @@ services:
       - 8888:3000
     volumes:
       - ./services/${APP}-react:/srv/${APP}-react
+
+  vue:
+    command: yarn serve
+    container_name: vue
+    image: ${APP}-vue:${APP_VERSION}
+    ports:
+      - 8880:8080
+    volumes:
+      - ./services/${APP}-vue:/srv/${APP}-vue

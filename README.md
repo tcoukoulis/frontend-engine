@@ -6,7 +6,7 @@ A tool for quickly installing various frontend frameworks without needing the un
 
 Copy `example.env` to `.env` and change contents to fit your naming convention (you may need to update `docker-compose.yml` if you do).
 
-Run `./scripts/build.sh` to build each frontend framework in its own container (and by each I mean react only at this time).
+Run `./scripts/build.sh` to build each frontend framework in its own container.
 
 
 ## Configure
